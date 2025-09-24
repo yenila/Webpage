@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michigan Facts – HTML5 Final Project</title>
+  <meta name="description" content="A small, fully valid and accessible HTML5 page demonstrating semantic structure, images with descriptive alt text, lists, and links.">
+</head>
+<body>
+  <!-- Header & primary navigation (semantic #1) -->
+  <header>
+    <h1>Michigan Facts</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content (semantic #2) -->
+  <main id="main-content">
+    <!-- Section with proper heading order -->
+    <section id="overview" aria-labelledby="overview-h2">
+      <h2 id="overview-h2">Overview</h2>
+      <p>
+        Michigan is known for the Great Lakes shoreline, vibrant university towns, and a rich automotive history.
+        This page demonstrates valid HTML5 structure, accessible images, lists, and external links.
+      </p>
+      <p>
+        Learn more on the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs (HTML)</a>.
+      </p>
+    </section>
+
+    <!-- Article with a list (semantic #3) -->
+    <article id="highlights" aria-labelledby="highlights-h2">
+      <h2 id="highlights-h2">Top Three Highlights</h2>
+      <ol>
+        <li><strong>Great Lakes:</strong> Freshwater coastlines ideal for beaches, lighthouses, and boating.</li>
+        <li><strong>Detroit:</strong> The Motor City—home to museums, music, and automotive landmarks.</li>
+        <li><strong>Upper Peninsula:</strong> Scenic trails, waterfalls, and the iconic Mackinac Bridge.</li>
+      </ol>
+    </article>
+
+    <!-- Image gallery with descriptive alt text (three images) -->
+    <section id="gallery" aria-labelledby="gallery-h2">
+      <h2 id="gallery-h2">Image Gallery</h2>
+      <p>Below are three real example images with descriptive alternative text.</p>
+
+      <figure>
+        <img
+          src="images/lake-michigan-sunrise.jpg"
+          alt="Sunrise over Lake Michigan with calm blue water and pale sky" width="800" height="450">
+        <figcaption>Lake Michigan at sunrise.</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/mackinac-bridge-dusk.jpg"
+          alt="Silhouette of the Mackinac Bridge against an orange dusk sky" width="800" height="450">
+        <figcaption>Mackinac Bridge at dusk.</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/detroit-skyline.jpg"
+          alt="Detroit skyline with modern buildings reflected in the river" width="800" height="450">
+        <figcaption>Detroit skyline along the river.</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 Michigan Facts • Built for the HTML5 Final Project. 
+      <a href="#main-content">Back to top</a>
+    </p>
+  </footer>
+</body>
+</html>
